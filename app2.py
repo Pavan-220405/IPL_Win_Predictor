@@ -37,5 +37,5 @@ if st.button('Predict'):
     result = model.predict_proba(input_df)
     loss = result[0][0]
     win = result[0][1]
-    st.markdown(f"### 🟢 {batting_team} Win Probability: **{win * 100:.2f}%**")
-    st.markdown(f"### 🔴 {bowling_team} Win Probability: **{loss * 100:.2f}%**")
+    st.markdown(f"##### 🟢 {batting_team} Win Probability: **{win * 100:.2f}%**")
+    st.markdown(f"##### 🔴 {bowling_team} Win Probability: **{loss * 100:.2f}%**")
